@@ -1,0 +1,18 @@
+{
+  "extensions": {
+    "Keyfactor.Orchestrators.Extensions.IOrchestratorJobExtension": {
+      "UniversalOrchestratorExtensionSample.Jobs.Inventory": {
+        "assemblypath": "UniversalOrchestratorExtensionSample.dll",
+        "TypeFullName": "UniversalOrchestratorExtensionSample.Jobs.Inventory"
+      },
+      "UniversalOrchestratorExtensionSample.Jobs.Management": {
+        "assemblypath": "UniversalOrchestratorExtensionSample.dll",
+        "TypeFullName": "UniversalOrchestratorExtensionSample.Jobs.Management"
+      },
+      "UniversalOrchestratorExtensionSample.Jobs.Reenrollment": {
+        "assemblypath": "UniversalOrchestratorExtensionSample.dll",
+        "TypeFullName": "UniversalOrchestratorExtensionSample.Jobs.Reenrollment"
+      }
+    }
+  }
+}
