@@ -12,7 +12,7 @@ namespace UniversalOrchestratorExtensionSample.Jobs
 {
     public class Inventory : IInventoryJobExtension
     {
-        public string ExtensionName => Constants.ExtensionName;
+        public string ExtensionName => "SAMPLETYPE";
         private readonly ILogger _logger = LogHandler.GetClassLogger<Inventory>();
 
         public JobResult ProcessJob(InventoryJobConfiguration jobConfiguration, SubmitInventoryUpdate submitInventoryUpdate)

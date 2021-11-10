@@ -1,7 +1,6 @@
 ﻿using Keyfactor.Logging;
 using Keyfactor.Orchestrators.Common.Enums;
 using Keyfactor.Orchestrators.Extensions;
-using Keyfactor.PKI.X509;
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
@@ -102,7 +101,7 @@ namespace UniversalOrchestratorExtensionSample.Jobs
 
             string password = mgmtCert.PrivateKeyPassword;
             X509Certificate2 cert = GetX509(mgmtCert);
-            string pemString = CertificateConverterFactory.FromX509Certificate2(cert, password).ToPEM(includeHeaders: true, password: password);
+            string pemString = string.Empty; // CertificateConverterFactory.FromX509Certificate2(cert, password).ToPEM(includeHeaders: true, password: password);
 
             _logger.MethodExit();
             return pemString;
